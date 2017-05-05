@@ -1,0 +1,37 @@
+Plan:
+Complete the plan.html file with clear details, as follows:
+Goals
+Concisely state what the goal (purpose) of the website is. Note that the goals must be to improve something in a measurable way. Why is the site needed? How does it benefit the client? Be clear and specific. Good goal(s) statements are usually only a few sentences and contain no unnecessary information.
+
+The purpose of the website is to attract more customers by providing the information about the current business. This will also be the platform to introduce the new and existing customers with new branch of the company. 
+
+
+The goal of this website is to attract new and existing customers by providing the information about the company including the new business. 
+
+Can be for increase sales(well-organised, userfriendly, CTA), becoming an authoritative resource(update regularly, establish trust), improve interaction with existin and potential customer, build brand
+Improve customers satisfaction, increase the user satisfaction by 10%
+
+Success Evaluation
+Describe the process(es) by which the site's success will be evaluated. How do you know that the site does what the client wanted? Measure the goals you stated above.
+
+	How? Increase number of customer at least by ..%
+
+	The site achieves its function if the number of order increase by at least 20%.
+
+Target Audience
+Describe two things clearly and specifically: 
+1.	the target audience that your site is intended for (be specific; you can't aim for everyone – people who loves fish, pets. The one that wants one. The one who owns pets(cause its supplies) it has the necessity  
+2.	how you will intentionally design the site to cater to this group (as distinct from another, different target audience). – use the attractive pics for them like the pets photos. Include good colour/attractive/relevant. Text scannable, easy navigation, simple usage/userfriendly
+
+Content
+This section should contain a dot-point list of the pages you intend to make and the content to go on each of those pages. Use a table or nested list or something clear. Create the flowchart from this.
+-	Homepage
+-	
+
+Site Flowchart
+Create a site flowchart to show the hierarchy of pages in the site and their relationships. 
+Each page should be represented by one box. The order of boxes is the order these links should appear on the site. 
+If you don't have a preferred drawing program for flowcharts, use www.draw.io.
+Save your flowchart as a PNG file (normally the best file format for plain, straight-lined diagrams like this) and insert the image in your plan file under this heading.
+
+
