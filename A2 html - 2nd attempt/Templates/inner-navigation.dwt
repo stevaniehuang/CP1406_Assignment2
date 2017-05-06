@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<link href="../css/mastercss.css" rel="stylesheet" type="text/css">
+<link href="../css/contentscss.css" rel="stylesheet" type="text/css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div id="navigation">
+ <div id="headertitle">
+  <p><img src="../images/Fish-Tastic logo.png" width="400" height="" alt="fishtastic logo"/></p>
+ </div>
+<nav>
+<div>
+	<ul>
+	  <li>Home</li>
+	  <li><a href="../getcostume.html">Fish-Tastic?!</a></li>
+		
+		<li><a href="../joinparty.html">Product</a>
+			<ul>
+				<li><a href="../joinparty.html#signup">Fish</a></li>
+				<li>Fish food</li>
+				<li><a href="../joinparty.html#partyguidelines">Equipment</a></li>
+				</ul>
+			
+		</li>
+		<li><a href="../index.html">Order Now</a></li>
+		<li>Services</li>
+		<li>Announcement</li>
+		<li><a href="../contactus.html">Contact Us</a></li>
+	</ul>
+</div>
+</nav>
+</div>
+	
+<!-- TemplateBeginEditable name="content" -->
+
+<p></p>
+<!-- TemplateEndEditable -->
+</body>
+<footer>
+	<h1>© Fish-Tastic</h1>
+	<p>
+		
+	</p>
+</footer>
+</html>

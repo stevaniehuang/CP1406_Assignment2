@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Home</title>
+<!-- TemplateEndEditable -->
+<link href="../css/mastercss.css" rel="stylesheet" type="text/css">
+<link href="../css/indexcss.css" rel="stylesheet" type="text/css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div id="navigation">
+<nav>
+	<ul>
+		<li><a href="../ourstory.html">Our Story</a>
+			<ul>
+				<li><a href="../ourstory.html#aboutcosplay">About Cosplay</a></li>
+				<li><a href="../ourstory.html#aboutcossieplay">About CossiePlay</a></li>
+			</ul>
+		</li>
+		<li><a href="../getcostume.html">Get Costume</a>
+			<ul>
+				<li><a href="../getcostume.html#overview">Overview</a></li>
+				<li><a href="../getcostume.html#ordernow">Order Now</a></li>
+				<li><a href="../getcostume.html#itemlist">Item List</a></li>
+			</ul>
+		</li>
+		<li><a href="../index.html">Home</a></li>
+		<li><a href="../joinparty.html">Join Party</a>
+			<ul>
+				<li><a href="../joinparty.html#signup">Sign Up</a></li>
+				<li><a href="../joinparty.html#partyguidelines">Party Guideliness</a></li>
+			</ul>
+		</li>
+		<li><a href="../contactus.html">Contact Us</a></li>
+	</ul>
+</nav>
+</div>
+
+<div id="backgroundhome">
+	<div id="hometitle">
+<h1>CossiePlay</h1>
+<p>
+Dressing up is fun <br>
+Good for the socially awkward and very creative 
+</p>
+
+</div>
+</div>
+<!-- TemplateBeginEditable name="content" -->
+<p></p>
+<!-- TemplateEndEditable -->
+</body>
+
+<footer>
+	<h1>© CossiePlay</h1>
+	<p>
+		4 Stanton Avenue, Hulkstwon<br>
+		cossieplay@gmail.com<br>
+		P.07 4771 1234<br>
+		F.07-4771 1235
+	</p>
+</footer>
+</html>
