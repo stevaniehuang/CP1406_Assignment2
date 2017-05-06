@@ -12,32 +12,28 @@
 </head>
 
 <body>
-<div id="navigation">
  <div id="headertitle">
   <p><img src="../images/Fish-Tastic logo.png" width="400" height="" alt="fishtastic logo"/></p>
  </div>
-<nav>
-<div>
+<nav id="navigation">
 	<ul>
-	  <li>Home</li>
-	  <li><a href="../getcostume.html">Fish-Tastic?!</a></li>
-		
-		<li><a href="../joinparty.html">Product</a>
+		<li><a href="../index.html">Home</a></li>
+		<li><a href="../aboutus.html">Fish-Tastic?!</a></li>
+		<li><a href="../products.html">Product</a>
 			<ul>
 				<li><a href="../joinparty.html#signup">Fish</a></li>
-				<li>Fish food</li>
+				<li><a href="../fishfood.html">Fish food</a></li>
 				<li><a href="../joinparty.html#partyguidelines">Equipment</a></li>
-				</ul>
-			
+			</ul>
 		</li>
-		<li><a href="../index.html">Order Now</a></li>
-		<li>Services</li>
-		<li>Announcement</li>
+		<li><a href="../petshop.html">Pets & Vets</a></li>
+		<li><a href="../events.html">Events</a></li>
+		<li><a href="../orderform.html">Order Now</a></li>
+		<li><a href="../services.html">Services</a></li>
+		<li><a href="../announcements.html">Announcements</a></li>
 		<li><a href="../contactus.html">Contact Us</a></li>
 	</ul>
-</div>
 </nav>
-</div>
 	
 <!-- TemplateBeginEditable name="content" -->
 
