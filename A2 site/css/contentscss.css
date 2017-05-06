@@ -171,7 +171,30 @@ h2{
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 	font-size: 35px;
 }
-
-
-
-
+table{
+	border-collapse: collapse;
+}
+table th{
+	border:black solid;
+}
+.faqbutton{
+	cursor:pointer;
+	border:none;
+	padding: 20px;
+	background-color: #9AF7FF;
+}
+.faqbutton[value="Show"] + .faq div{
+	margin-top:-100%;
+}
+.faqbutton[value="Hide"] + .faq{
+	padding: 5px;
+}
+.faq{
+	overflow:hidden;
+}
+.faq div{
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: margin 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: margin 0.1s ease;
+}
