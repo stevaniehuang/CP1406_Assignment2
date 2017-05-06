@@ -171,30 +171,39 @@ h2{
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 	font-size: 35px;
 }
+a{
+	text-decoration: none;
+}
 table{
 	border-collapse: collapse;
 }
 table th{
 	border:black solid;
 }
-.faqbutton{
+#faq{
+	text-align:center;
+}
+.question{
+	vertical-align: middle;
 	cursor:pointer;
 	border:none;
-	padding: 20px;
+	padding: 10px;
+	margin: 10px;
 	background-color: #9AF7FF;
 }
-.faqbutton[value="Show"] + .faq div{
+.question[value="Show"] + .answer div{
 	margin-top:-100%;
 }
-.faqbutton[value="Hide"] + .faq{
+.question[value="Hide"] + .answer{
 	padding: 5px;
 }
-.faq{
+.answer{
 	overflow:hidden;
+	margin: 10px 25%;
 }
-.faq div{
+.answer div{
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: margin 0.2s ease;
 	-o-transition: all 0.2s ease;
-	transition: margin 0.1s ease;
+	transition: margin 0.2s ease;
 }
