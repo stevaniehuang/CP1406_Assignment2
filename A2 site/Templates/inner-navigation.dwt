@@ -18,15 +18,18 @@
 <nav id="navigation">
 	<ul>
 		<li><a href="../index.html">Home</a></li>
-		<li><a href="../aboutus.html">Fish-Tastic?!</a></li>
-		<li><a href="../products.html">Product</a>
+		<li><a href="../aboutus.html">Fish-Tastic?!</a>
 			<ul>
-				<li><a href="../joinparty.html#signup">Fish</a></li>
-				<li><a href="../fishfood.html">Fish food</a></li>
-				<li><a href="../joinparty.html#partyguidelines">Equipment</a></li>
+				<li><a href="../aboutus.html#faq">FAQ</a></li>
 			</ul>
 		</li>
-		<li><a href="../petshop.html">Pets & Vets</a></li>
+		<li><a href="../products.html">Product</a>
+			<ul>
+				<li><a href="../products.html#fish">Fish</a></li>
+				<li><a href="../products.html#fishfood">Fish food</a></li>
+				<li><a href="../products.html#equipment">Equipment</a></li>
+			</ul>
+		</li>
 		<li><a href="../events.html">Events</a></li>
 		<li><a href="../orderform.html">Order Now</a></li>
 		<li><a href="../services.html">Services</a></li>
