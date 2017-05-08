@@ -84,3 +84,10 @@ ul li, p, div{
 	font-size: 20px;
 }
 
+table{
+	border-collapse:collapse;
+}
+table td, th{
+	padding: 10px;
+	border: black solid;
+}
