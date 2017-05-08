@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 .box{
-	border-radius: 100px;
 	margin: 20px;
 	padding: 50px;
 	box-shadow: 10px 10px 5px #888888;
@@ -35,7 +34,7 @@
 }
 
 #aboutusbg{
-	background-image: url(../images/tropicalfish.jpg);
+
 }
 
 #faq{
@@ -44,7 +43,7 @@
 }
 
 #faqbq{
-	background-image: url(../images/hd-pics-photos-fish-cute-gold-fish-desktop-background-wallpaper.jpg);
+	background-image: ;
 
 }
 .question{
