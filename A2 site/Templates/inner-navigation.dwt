@@ -21,7 +21,7 @@
 			<li><a href="../index.html">Home</a></li>
 			<li><a href="../aboutus.html">Fish-Tastic?!</a>
 				<ul>
-					<li>About Us</li>
+					<li><a href="../aboutus.html#aboutus">About Us</a></li>
 					<li><a href="../aboutus.html#faq">FAQ</a></li>
 				</ul>
 			</li>

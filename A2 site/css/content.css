@@ -45,7 +45,9 @@
 
 #faqbq{
 	background-image: url(../images/hd-pics-photos-fish-cute-gold-fish-desktop-background-wallpaper.jpg);
-
+	width:100%;
+	margin:0;
+	padding:0;
 }
 .question{
 	vertical-align: middle;
