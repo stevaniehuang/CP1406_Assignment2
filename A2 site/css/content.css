@@ -26,6 +26,15 @@
 	background-color: rgba(0,210,255,1.00);
 }
 
+.content {
+  	height:100%;
+  	min-height:100%;/*for mozilla*/
+	
+}
+
+html>body .content {
+  	height: 100%;
+}
 
 #aboutus{
 	padding: 50px;
@@ -34,7 +43,6 @@
 }
 
 #aboutusbg{
-
 }
 
 #faq{
@@ -79,6 +87,9 @@
 	transition: margin 0.2s ease;
 }
 
+#fishproduct{
+	background-color: rgba(155,237,255,1.00);
+}
 ul li, p, div{
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	font-size: 20px;

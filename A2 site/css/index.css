@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+ html,body {
+  	height:100%;
+  	margin:0;
+}
+
+.fixednavbar {
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	z-index: 9999;
+  	width: 100%;
+}
+
+nav ul{	
+	width: auto;
+	background-color: #C2F4FF;
+	margin-top: -1px;
+	text-align: right;
+	padding-right: 20px;
+	
+}
+
+nav ul li {
+	font-size: 18px;
+	padding: 20px;	
+	display: inline-block;
+	position: relative;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+nav li ul {
+	display: none;
+	list-style-type: none;
+	z-index: 1;
+	text-align: justify;
+}
+
+nav li:hover ul{
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+nav li:hover ul li{
+	margin: 0;
+	text-decoration: none;
+	display: flex;
+	padding-left: 10px;
+}
+
+nav li:hover ul li a{
+	color: black;
+}
+
+nav li:hover{
+	background-color: rgba(255,219,119,1.00);
+}
+
+.content {
+  	height:100%;
+  	min-height:100%;/*for mozilla*/
+	position: relative;
+	overflow: auto;
+}
+
+html>body .content {
+  	height: 100%;
+}
+
+.button{
+	cursor: pointer;
+    border: none;
+    padding: 20px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+	background-color:rgba(155,237,255,1.00);
+	text-decoration: none;
+ 	margin-right: 60px;
+}
+
+.redirect {
+	text-align: center;
+}
+
+.bigbutton{
+	cursor: pointer;
+    border: none;
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 20px;
+	background-color:rgba(130,235,239,1.00);
+	text-decoration: none;
+ 	margin: 60px;
+}
+
+#one {
+	background: rgba(155,237,255,1.00);
+}
+
+#backgroundimg{
+	background-image: url(../images/ClownFishWallpaper.jpg);
+	background-position: center;
+}
+
+#logoholder{
+	margin: auto;
+}
+
+#hometitle {
+	padding: 80px;
+	text-align: center;
+	background: rgba(255,255,255,0.7);
+
+	
+}
+
+#hometitle p{
+	top: -10px;
+	padding-top: -50px;
+	font-size: 25px;
+	bottom: 0px;
+}
+
+
+#two {
+  	background-color:rgba(255,219,119,1.00);
+	
+}
+
+#announcement{
+	text-align: center;
+	margin: 0;
+	padding-top: 200px;
+	padding-bottom: 100px;
+}
+
+#announcement p{
+	font-size: 20px;
+}
+
+h1, p, li {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+footer {
+    background-color: rgba(194,244,255,1.00);
+  	position: relative;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+	margin-top: 60px;
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../css/index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<nav class="fixednavbar">
+	<ul>
+		<li>Home</li>
+		<li><a href="../getcostume.html">Fish-Tastic?!</a></li>
+		
+		<li><a href="../joinparty.html">Product</a>
+			<ul>
+				<li><a href="../joinparty.html#signup">Sign Up</a></li>
+				<li><a href="../joinparty.html#partyguidelines">Party Guideliness</a></li>
+			</ul>
+		</li>
+		<li><a href="../index.html">Order Now</a></li>
+		<li>Services</li>
+		<li>Announcement</li>
+		<li><a href="../contactus.html">Contact Us</a>
+		<ul>
+			<li>Feedback Form</li>
+		</ul></li>
+	</ul>
+</nav>
+
+<div class="content" id="one">
+	<div id="backgroundimg">
+	<div id="hometitle">
+	<div id="logoholder">
+	<img src="../images/Fish-Tastic logo.png" width="500" height="" alt="fishtasticbiglogo"/></div>
+	<p>
+  	"It is truly a privilege to be able to look at a part of the ocean everyday"
+	</p>
+	<ul >
+		<li class="button">Our Products</li>
+		<li class="button">Order Now</li>
+	</ul>
+	</div>
+	</div>
+
+	<div class="redirect">
+	  <h1>What's New? <br> &#8595 &#8595 &#8595</h1>
+	</div>
+</div>
+
+<div class="bigbutton"><!-- TemplateBeginEditable name="services" -->
+  <h1>FREE DELIVERY SUPPLIES</h1>
+  <p>Find out more</p>
+<!-- TemplateEndEditable --></div>
+
+<div class="content" id="two">
+	 <div id="announcement"><!-- TemplateBeginEditable name="announcement" -->
+	   <h1>Announcement !!!</h1>
+       <p> ....</p>
+       <h1>we also hold events for you to participate</h1>
+       <p> Learn More </p>
+	 <!-- TemplateEndEditable --></div>
+</div>
+
+
+<footer>
+	<h1>© Fish-Tastic</h1>
+	<p>
+		
+	</p>
+</footer>
+</body>
+</html>
