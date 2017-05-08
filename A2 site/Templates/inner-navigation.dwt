@@ -6,37 +6,44 @@
 <title>Untitled Document</title>
 <!-- TemplateEndEditable -->
 <link href="../css/mastercss.css" rel="stylesheet" type="text/css">
-<link href="../css/contentscss.css" rel="stylesheet" type="text/css">
+<link href="../css/content.css" rel="stylesheet" type="text/css">
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
 </head>
 
 <body>
- <div id="headertitle">
-  <p><img src="../images/Fish-Tastic logo.png" width="400" height="" alt="fishtastic logo"/></p>
- </div>
-<nav id="navigation">
-	<ul>
-		<li><a href="../index.html">Home</a></li>
-		<li><a href="../aboutus.html">Fish-Tastic?!</a>
-			<ul>
-				<li><a href="../aboutus.html#faq">FAQ</a></li>
-			</ul>
-		</li>
-		<li><a href="../products.html">Product</a>
-			<ul>
-				<li><a href="../products.html#fish">Fish</a></li>
-				<li><a href="../products.html#fishfood">Fish food</a></li>
-				<li><a href="../products.html#equipment">Equipment</a></li>
-			</ul>
-		</li>
-		<li><a href="../events.html">Events</a></li>
-		<li><a href="../orderform.html">Order Now</a></li>
-		<li><a href="../services.html">Services</a></li>
-		<li><a href="../announcements.html">Announcements</a></li>
-		<li><a href="../contactus.html">Contact Us</a></li>
-	</ul>
-</nav>
+<div id="navigation">
+	<div id="headertitle">
+  	<img src="../images/Fish-Tastic logo.png" width="400" height="" alt="fishtastic logo"/>
+		</div>
+	<nav>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../aboutus.html">Fish-Tastic?!</a>
+				<ul>
+					<li>About Us</li>
+					<li><a href="../aboutus.html#faq">FAQ</a></li>
+				</ul>
+			</li>
+			<li><a href="../products.html">Product</a>
+				<ul>
+					<li><a href="../products.html#fish">Fish</a></li>
+					<li><a href="../products.html#fishfood">Fish food</a></li>
+					<li><a href="../products.html#equipment">Equipment</a></li>
+				</ul>
+			</li>
+			<li><a href="../orderform.html">Order Now</a></li>
+			<li><a href="../services.html">Services</a></li>
+			<li><a href="../announcements.html">Announcements</a>
+				<ul>
+				<li><a href="../events.html">Event List</a></li>
+				</ul>
+			</li>
+			<li><a href="../contactus.html">Contact Us</a></li>
+		</ul>
+	</nav>
+</div>
+	
 	
 <!-- TemplateBeginEditable name="content" -->
 

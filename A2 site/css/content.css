@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+.box{
+	border-radius: 100px;
+	margin: 20px;
+	padding: 50px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.firstblue{
+	background-color: rgba(155,237,255,1.00);
+}
+
+.secondblue{
+	background-color: rgba(115,230,255,1.00);
+}
+
+.thridblue{
+	background-color: rgba(80,224,255,1.00);
+}
+
+.fourthblue{
+	background-color: rgba(46,218,255,1.00);
+}
+
+.fifthblue{
+	background-color: rgba(0,210,255,1.00);
+}
+
+
+#aboutus{
+	padding: 50px;
+	text-align: center;
+	
+}
+
+#aboutusbg{
+	background-image: url(../images/tropicalfish.jpg);
+}
+
+#faq{
+	padding: 20px;
+	text-align:center;
+}
+
+#faqbq{
+	background-image: url(../images/hd-pics-photos-fish-cute-gold-fish-desktop-background-wallpaper.jpg);
+
+}
+.question{
+	vertical-align: middle;
+	cursor:pointer;
+	border:none;
+	padding: 10px;
+	margin: 10px;
+	background-color: #C2FCFF;
+	font-size: 20px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	box-shadow: 1px 5px 4px 1px #d3d3d3;
+	
+	
+
+}
+.question[value="Show"] + .answer div{
+	margin-top:-100%;
+}
+.question[value="Hide"] + .answer{
+	padding: 5px;
+}
+.answer{
+	overflow:hidden;
+	margin: 10px 25%;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 10px;
+}
+.answer div{
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: margin 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: margin 0.2s ease;
+}
+
+ul li, p, div{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 20px;
+}
+
