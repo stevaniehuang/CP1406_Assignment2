@@ -2,12 +2,15 @@
 
 .box{
 	margin: 20px;
-	padding: 50px;
+	
 	box-shadow: 10px 10px 5px #888888;
+	text-align: center;
 }
 
 .firstblue{
 	background-color: rgba(155,237,255,1.00);
+	padding-top: 20px;
+	border-bottom: double 10px;
 }
 
 .secondblue{
@@ -51,7 +54,7 @@ html>body .content {
 }
 
 #faqbq{
-	background-image: ;
+	
 
 }
 .question{
