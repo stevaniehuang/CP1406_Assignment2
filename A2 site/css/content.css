@@ -1,9 +1,8 @@
 @charset "utf-8";
 
 .box{
-	margin: 20px;
-	
-	box-shadow: 10px 10px 5px #888888;
+	margin: 50px 120px;
+	padding-bottom: 20px;
 	text-align: center;
 }
 
@@ -29,15 +28,7 @@
 	background-color: rgba(0,210,255,1.00);
 }
 
-.content {
-  	height:100%;
-  	min-height:100%;/*for mozilla*/
-	
-}
 
-html>body .content {
-  	height: 100%;
-}
 
 #aboutus{
 	padding: 50px;
@@ -91,7 +82,11 @@ html>body .content {
 }
 
 #fishproduct{
-	background-color: rgba(155,237,255,1.00);
+	background: repeat url(../images/DsH85q.jpg);
+}
+
+#fishproducttransparent{
+	background-color: rgba(255,255,255,0.67);
 }
 ul li, p, div{
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
@@ -122,4 +117,20 @@ table td, th{
 }
 #equipment td ul{
 	text-align:left;
+}
+
+table{
+	margin-top: 20px;
+
+}
+
+
+h2{
+	padding: 20px;
+	border-bottom: solid;
+}
+
+h3{
+	background-color: rgba(154,237,255,1.00);
+	padding: 5px;
 }
