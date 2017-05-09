@@ -17,7 +17,7 @@
 	background-color: rgba(115,230,255,1.00);
 }
 
-.thridblue{
+.thirdblue{
 	background-color: rgba(80,224,255,1.00);
 }
 
@@ -104,4 +104,22 @@ table{
 table td, th{
 	padding: 10px;
 	border: black solid;
+}
+#fish td{
+	width:25%;
+}
+#fishfood td{
+	width:33%;
+}
+.medications td{
+	width:33%;
+}
+.decorations td{
+	width:33%;
+}
+.fishtanks td{
+	width:25%;
+}
+#equipment td ul{
+	text-align:left;
 }
