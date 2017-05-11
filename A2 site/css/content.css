@@ -82,12 +82,11 @@
 }
 
 #fishproduct{
-	background: repeat url(../images/DsH85q.jpg);
+	background-color: rgba(255,255,255,0.2);
+	padding: 15px;
 }
 
-#fishproducttransparent{
-	background-color: rgba(255,255,255,0.67);
-}
+
 ul li, p, div{
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	font-size: 20px;

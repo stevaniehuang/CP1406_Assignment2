@@ -14,8 +14,9 @@
 }
 
 body{
-	background-color: #CAE6EA;
+
 	margin:0px;
+	background: url(../images/fishbubblesEdit.jpg);
 }
 
 nav ul{	
@@ -83,7 +84,10 @@ footer {
 }
 
 footer h1{
+	display: block;
+	margin: 10px;
 	margin-left: 40px;
+	float: left;
 }
 
 footer p{
