@@ -86,6 +86,89 @@
 	padding: 15px;
 }
 
+.picturelist{
+	list-style-type: none;
+	text-align: center;
+	
+	padding: 20px;
+	
+}
+
+ul.picturelist li {
+	display: inline-block;
+	position: relative;
+	margin: 25px;
+}
+
+
+span.textcaption {
+	background: rgba(0,0,0,0.5);
+	color: white;
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	padding: 12px;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+
+span.textcaption span {
+  	text-align: center;
+}
+ul.picturelist li:hover span.textcaption {
+  	opacity: 1;
+}
+
+.modalDialog {
+	position: fixed;
+	width: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	overflow: auto;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	background: #fff;
+
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+	text-decoration: none;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 ul li, p, div{
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
