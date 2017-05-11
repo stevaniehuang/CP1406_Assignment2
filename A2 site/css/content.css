@@ -151,7 +151,9 @@ ul.picturelist li:hover span.textcaption {
 	background: #fff;
 
 }
-
+.modalDialog > div ul{
+	margin-left:-40px;
+}
 /* The Close Button */
 .close {
     color: #aaaaaa;
@@ -187,15 +189,6 @@ table td, th{
 }
 #fishfood td{
 	width:33%;
-}
-.medications td{
-	width:33%;
-}
-.decorations td{
-	width:33%;
-}
-.fishtanks td{
-	width:25%;
 }
 #equipment td ul{
 	text-align:left;
