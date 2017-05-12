@@ -4,6 +4,7 @@
 	margin: 50px 120px;
 	padding-bottom: 20px;
 	text-align: center;
+	background-color: rgba(255,221,85,1.00);
 }
 
 .firstblue{
@@ -82,22 +83,19 @@
 }
 
 #fishproduct{
-	background-color: rgba(255,255,255,0.2);
 	padding: 15px;
+	background-color: rgba(255,255,255,0.54);
 }
 
 .picturelist{
 	list-style-type: none;
-	text-align: center;
-	
-	padding: 20px;
-	
+	padding: 10px;
 }
 
 ul.picturelist li {
 	display: inline-block;
 	position: relative;
-	margin: 25px;
+	margin: 20px
 }
 
 
@@ -177,27 +175,6 @@ ul li, p, div{
 	font-size: 20px;
 }
 
-table{
-	border-collapse:collapse;
-}
-table td, th{
-	padding: 10px;
-	border: black solid;
-}
-#fish td{
-	width:25%;
-}
-#fishfood td{
-	width:33%;
-}
-#equipment td ul{
-	text-align:left;
-}
-
-table{
-	margin-top: 20px;
-
-}
 
 
 h2{
