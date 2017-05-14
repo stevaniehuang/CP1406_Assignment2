@@ -1,35 +1,45 @@
 @charset "utf-8";
 
-#navigation{
-	width: 100%;
-	top: 0;
-	margin: 0 auto;
-	display: flex;
-  	justify-content: center;
-}
-
-#headertitle img{
-	display: inline-block;
-	position: relative;
-}
 
 body{
-
 	margin:0px;
 	background: url(../images/fishbubblesEdit.jpg);
 }
 
+ html,body {
+  	height:100%;
+  	margin:0;
+}
+
+.fixednavbar {
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+	right: 0;
+  	z-index: 9999;
+  	width: 100%;
+	background-color: rgba(255,219,119,1.00);
+}
+nav ul li span{
+
+	display: inline-block;
+
+	
+}
 nav ul{	
+	justify-content: center;
+	width: auto;
 	background-color: #C2F4FF;
+	text-align: center;
 	padding: 0;
-  	margin: 10px;
-	margin-top: 85px;
-  	text-align: center;
-  	display:inline-block;
-  
+	padding-bottom: 18px;
+	margin: 0;
+
 }
 
 nav ul li {
+	font-size: 18px;
+	padding: 10px 40px;	
 	display: inline-block;
 	position: relative;
 }
@@ -37,15 +47,13 @@ nav ul li {
 nav ul li a{
 	text-decoration: none;
 	color: black;
-	padding: 20px 30px;
-	display:block;
-	
 }
 
 nav li ul {
 	display: none;
 	list-style-type: none;
 	z-index: 1;
+	text-align: justify;
 }
 
 nav li:hover ul{
@@ -61,17 +69,18 @@ nav li:hover ul{
 nav li:hover ul li{
 	margin: 0;
 	text-decoration: none;
-	display:block;
+	display: flex;
+	padding-left: 10px;
 }
 
 nav li:hover ul li a{
 	color: black;
-	padding:20px 10px;
 }
 
 nav li:hover{
 	background-color: rgba(255,219,119,1.00);
 }
+
 
 footer {
 	color: rgba(0,0,102,1.00);
