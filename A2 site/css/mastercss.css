@@ -21,9 +21,8 @@ body{
 	background-color: rgba(255,219,119,1.00);
 }
 nav ul li span{
-
 	display: inline-block;
-
+	padding: 10px 40px;
 	
 }
 nav ul{	
@@ -32,14 +31,12 @@ nav ul{
 	background-color: #C2F4FF;
 	text-align: center;
 	padding: 0;
-	padding-bottom: 18px;
 	margin: 0;
-
+	display: block;
 }
 
 nav ul li {
 	font-size: 18px;
-	padding: 10px 40px;	
 	display: inline-block;
 	position: relative;
 }
@@ -47,6 +44,8 @@ nav ul li {
 nav ul li a{
 	text-decoration: none;
 	color: black;
+	display: block;
+	padding: 10px 40px;
 }
 
 nav li ul {
@@ -69,8 +68,7 @@ nav li:hover ul{
 nav li:hover ul li{
 	margin: 0;
 	text-decoration: none;
-	display: flex;
-	padding-left: 10px;
+	display: block;
 }
 
 nav li:hover ul li a{
