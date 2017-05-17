@@ -52,10 +52,12 @@
 				<tr>
 					<td>First Name:</td>
 					<td><input name="firstname" type="text" required  id="firstname" size="20" maxlength="50"></td>
+					<td>Selected Products:</td>
 				</tr>
 				<tr>
 					<td>Last Name:</td>
 					<td><input name="lastname" type="text" required  id="lastname" maxlength="50"></td>
+					<td rowspan="5"><select name="productlist" size="8" id="productlist"></select></td>
 				</tr>
 				<tr>
 					<td>City:</td>
@@ -73,7 +75,6 @@
 					<td>Email Address:</td>
 					<td><input name="email" type="text" required id="email"></td>
 				</tr>
-				<tr><td> </td></tr>
 				<tr>
 					<td>Product Type:</td>
 					<td><select name="products" id="products" onChange="productType()">
@@ -89,47 +90,50 @@
 					<td>Product:</td>
 					<td>
 					<select name="freshwater" id="freshwater" onChange="productPrice()">
-						<option value="guppy">Guppy</option>
-						<option value="fgoldfish">Fantail Goldfish</option>
-						<option value="ogoldfish">Oranda Goldfish</option>
-						<option value="neontetra">Neon Tetra</option>
+						<option value="Guppy">Guppy</option>
+						<option value="Fantail goldfish">Fantail Goldfish</option>
+						<option value="Oranda goldfish">Oranda Goldfish</option>
+						<option value="Neon tetra">Neon Tetra</option>
 					</select>
 					<select name="saltwater" id="saltwater" style="display:none" onChange="productPrice()">
-						<option value="clownfish">Clown Fish</option>
-						<option value="butterflyfish">Butterfly Fish</option>
-						<option value="angelfish">Angel Fish</option>
-						<option value="doryfish">Dory Fish</option>
+						<option value="Clown fish">Clown Fish</option>
+						<option value="Butterfly fish">Butterfly Fish</option>
+						<option value="Angel fish">Angel Fish</option>
+						<option value="Dory fish">Dory Fish</option>
 					</select>
 					<select name="fishfood" id="fishfood" style="display: none" onChange="productPrice()">
-						<option value="flakes">Tropical Flakes</option>
-						<option value="wafers">Algae Wafers</option>
-						<option value="bloodworms">Bloodworms</option>
+						<option value="Tropical flakes">Tropical Flakes</option>
+						<option value="Algae wafers">Algae Wafers</option>
+						<option value="Bloodworms">Bloodworms</option>
 					</select>
 					<select name="medications" id="medications" style="display: none" onChange="productPrice()">
-						<option value="hexshield">Hex Shield 125g</option>
-						<option value="shell">Wonder Shell</option>
-						<option value="generalcure">General Cure</option>
+						<option value="Hex shield">Hex Shield 125g</option>
+						<option value="Wonder shell">Wonder Shell</option>
+						<option value="General cure">General Cure</option>
 					</select>
 					<select name="fishtanks" id="fishtanks" style="display:none" onChange="productPrice()">
-						<option value="regulartank">Regular Fish Tank</option>
-						<option value="premiumtank">Premium Fish Tank</option>
-						<option value="fishbowl">Brandy Glass Fish Bowl</option>
-						<option value="waterpump">600 Rio Water Pump</option>
+						<option value="Regular tank">Regular Fish Tank</option>
+						<option value="Premium tank">Premium Fish Tank</option>
+						<option value="Brandy fish bowl">Brandy Glass Fish Bowl</option>
+						<option value="Water pump">600 Rio Water Pump</option>
 					</select>
 					<select name="decorations" id="decorations" style="display:none" onChange="productPrice()">
-						<option value="waterplant">Artificial Water Plant</option>
-						<option value="corals">Artificial Corals</option>
-						<option value="castlehouse">Ceramic Castle House</option>
+						<option value="Water plant">Artificial Water Plant</option>
+						<option value="Artificial corals">Artificial Corals</option>
+						<option value="Castle house">Ceramic Castle House</option>
 					</select>
 					</td>
+					<td><input type="button" id="remove" value="Remove product" onClick="removeProduct()"></td>
 				</tr>
 				<tr>
 					<td>Price of Product:</td>
 					<td>$<span id="price">0.80</span></td>
+					<td>Total Price:</td>
 				</tr>
 				<tr>
 					<td></td>
 					<td><input type="button" id="add" value="Add this product" onClick="addPrice()"></td>
+					<td>$<span id="total">0.00</span></td>
 				</tr>
 			</tbody>
 		</table>

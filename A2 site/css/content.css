@@ -198,11 +198,14 @@ h3{
 	text-align: center;
 }
 #contactus{
-	background-color: rgba(200,227,255,0.50)
+	background-color: rgba(200,227,255,0.50);
 }
 form{
+	display: inline-block;
 	align-content: center;
 	vertical-align: middle;
+	text-align: center;
+	background-color:rgba(133,207,255,0.57);
 }
 select{
 	width: 150px;

@@ -17,46 +17,6 @@ function checkForm() {
     // return true (submit form) or false (don't submit form) depending on errors
     return !errors;
 }
-function firstName(){
-	if (firstname.value != "") {
-        document.mainForm.firstNameTick.src = "tick.png";
-        document.mainForm.firstNameTick.alt = "tick";
-    }
-    else {
-        document.mainForm.firstNameTick.src = "cross.png";
-        document.mainForm.firstNameTick.alt = "cross";
-    }
-}
-function lastName(){
-	if (lastname.value != "") {
-        document.mainForm.lastNameTick.src = "tick.png";
-        document.mainForm.lastNameTick.alt = "tick";
-    }
-    else {
-        document.mainForm.lastNameTick.src = "cross.png";
-        document.mainForm.lastNameTick.alt = "cross";
-    }
-}
-function checkGenderClick(){
-	document.mainForm.genderTick.src = "tick.png";
-	document.mainForm.genderTick.alt = "tick";
-}
-function resetForm() {
-    var resetChoice = confirm('Reset all fields?');
-    if (resetChoice) {
-        console.log("Resetting form modifications.");
-        // note: could do this with an array of required fields
-		document.mainForm.firstNameTick.src = "cross.png";
-        document.mainForm.firstNameTick.alt = "cross";
-        document.mainForm.lastNameTick.src = "cross.png";
-        document.mainForm.lastNameTick.alt = "cross";
-        document.mainForm.genderTick.src = 'cross.png';
-        document.mainForm.genderTick.alt = 'cross';
-        document.mainForm.areas.style.background = "#fff";
-		document.getElementById('mainForm').reset();
-    }
-    return resetChoice;
-}
 function productType(){
 	var product = document.getElementById("products");
 	var selected = product.value;
@@ -135,27 +95,42 @@ function productPrice(){
 	document.getElementById("price").innerHTML = parseFloat(prices[document.getElementById(selected).value]).toFixed(2);
 }
 function addPrice(){
-	
+	var product = document.getElementById("products");
+	var selected = product.value;
+	total += prices[document.getElementById(selected).value];
+	document.getElementById("total").innerHTML = parseFloat(total).toFixed(2);
+	document.getElementById("productlist").innerHTML += "<option value='"+document.getElementById(selected).value+"'>"+document.getElementById(selected).value+"</option>";
 }
+function removeProduct(){
+	var productlist = document.getElementById("productlist");
+	if(productlist.value == ""){
+		alert("You need to select an option!")
+		return;
+	}
+	total = total - prices[productlist.value];
+	document.getElementById("total").innerHTML = parseFloat(total).toFixed(2);
+	productlist.remove(productlist.selectedIndex);
+}
+var total = 0;
 var prices = new Array();
-prices["guppy"]=0.80;
-prices["fgoldfish"]=1.00;
-prices["ogoldfish"]=1.30;
-prices["neontetra"]=0.80;
-prices["clownfish"]=31.40;
-prices["butterflyfish"]=32.00;
-prices["angelfish"]=70.00;
-prices["doryfish"]=30.00;
-prices["flakes"]=6.50;
-prices["wafers"]=11.90;
-prices["bloodworms"]=2.99;
-prices["hexshield"]=43.00;
-prices["shell"]=1.99;
-prices["generalcure"]=8.99;
-prices["regulartank"]=680.00;
-prices["premiumtank"]=349.00;
-prices["fishbowl"]=39.99;
-prices["waterpump"]=18.99;
-prices["waterplant"]=17.99;
-prices["corals"]=3.00;
-prices["castlehouse"]=14.99;
+prices["Guppy"]=0.80;
+prices["Fantail goldfish"]=1.00;
+prices["Oranda goldfish"]=1.30;
+prices["Neon tetra"]=0.80;
+prices["Clown fish"]=31.40;
+prices["Butterfly fish"]=32.00;
+prices["Angel fish"]=70.00;
+prices["Dory fish"]=30.00;
+prices["Tropical flakes"]=6.50;
+prices["Algae wafers"]=11.90;
+prices["Bloodworms"]=2.99;
+prices["Hex shield"]=43.00;
+prices["Wonder shell"]=1.99;
+prices["General cure"]=8.99;
+prices["Regular tank"]=680.00;
+prices["Premium tank"]=349.00;
+prices["Brandy fish bowl"]=39.99;
+prices["Water pump"]=18.99;
+prices["Water plant"]=17.99;
+prices["Artificial corals"]=3.00;
+prices["Castle house"]=14.99;
