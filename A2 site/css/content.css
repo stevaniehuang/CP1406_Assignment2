@@ -6,10 +6,15 @@
 	text-align: center;
 }
 
+
+#content{
+	margin-top: 160px;
+	align-content: center;
+	text-align: center;
+}
+
 .firstblue{
 	background-color: rgba(155,237,255,1.00);
-	padding-top: 20px;
-	border-bottom: double 10px;
 }
 
 .secondblue{
@@ -28,12 +33,27 @@
 	background-color: rgba(0,210,255,1.00);
 }
 
+.transparentbox{
+	background-color: rgba(255,255,255,0.5);
+	padding: 10px;
+	border-radius: 20px;
+	margin-top: 30px;
+}
 
+.transparentbox a{
+	color: black;
+}
 
 #aboutus{
 	padding: 50px;
 	text-align: center;
 	
+}
+
+
+#aboutus h2{
+	padding: 20px;
+	border-bottom: solid;
 }
 
 #aboutusbg{
@@ -84,6 +104,14 @@
 #fishproduct{
 	padding: 15px;
 	background-color: rgba(255,255,255,0.54);
+}
+
+#fishproduct h3{
+	background-color: rgba(154,237,255,1.00);
+	padding: 5px;
+	
+	padding-top: 20px;
+	border-bottom: double 10px;
 }
 
 .picturelist{
@@ -177,30 +205,49 @@ ul.picturelist li:hover span.textcaption {
 }
 
 
+#serviceheader{
+	margin: 50px;
+	background: rgba(255,255,255,0.65);
+	padding: 10px;
+}
+
+#serviceheader h1{
+	padding: 30px;
+}
+
+#serviceheader h2{
+	display: inline-block;
+	margin: 20px 30px;
+	margin-bottom: 50px;
+	padding: 20px;
+	color: black;
+	transition-property: background, border-radius;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+#serviceheader h2:hover{
+	background: rgba(255,219,119,1.00);
+	border-radius: 50px;
+	color: rgba(80,17,138,1.00);
+}
+
+
+#delivery, #consultation, #refund{
+	padding: 50px;
+}
+
 ul li, p, div{
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	font-size: 20px;
 }
 
 
-h2{
-	padding: 20px;
-	border-bottom: solid;
-}
 
-h3{
-	background-color: rgba(154,237,255,1.00);
-	padding: 5px;
-}
-#content{
-	margin-top:120px;
-	align-content: center;
-	text-align: center;
-}
+
 #contactus{
 	background-color: rgba(200,227,255,0.50)
-}
-form{
+}form{
 	align-content: center;
 	vertical-align: middle;
 }
