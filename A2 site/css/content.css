@@ -35,8 +35,11 @@
 
 .transparentbox{
 	background-color: rgba(255,255,255,0.5);
-	padding: 10px;
-	border-radius: 20px;
+	margin: 0 auto; /*center the box*/
+	align-content: center;
+	width: 600px;
+	padding: 30px;
+	border-radius: 30px;
 	margin-top: 30px;
 }
 
@@ -213,6 +216,9 @@ ul.picturelist li:hover span.textcaption {
 
 #serviceheader h1{
 	padding: 30px;
+	background: rgba(255,219,119,1.00);
+	border-bottom: double 10px rgba(0,0,102,1.00) 
+	
 }
 
 #serviceheader h2{
@@ -229,13 +235,15 @@ ul.picturelist li:hover span.textcaption {
 #serviceheader h2:hover{
 	background: rgba(255,219,119,1.00);
 	border-radius: 50px;
-	color: rgba(80,17,138,1.00);
+	color: rgba(0,90,134,1.00);
 }
 
 
 #delivery, #consultation, #refund{
 	padding: 50px;
 }
+
+
 
 ul li, p, div{
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
