@@ -19,6 +19,7 @@ body{
   	z-index: 9999;
   	width: 100%;
 	background-color: rgba(255,219,119,1.00);
+	
 }
 nav ul li span{
 	display: inline-block;
@@ -33,12 +34,16 @@ nav ul{
 	padding: 0;
 	margin: 0;
 	display: block;
+	
 }
 
 nav ul li {
 	font-size: 18px;
 	display: inline-block;
 	position: relative;
+	transition-property: background;
+  	transition-duration: 0.8s;
+  	transition-timing-function: linear;
 }
 
 nav ul li a{
@@ -79,6 +84,11 @@ nav li:hover{
 	background-color: rgba(255,219,119,1.00);
 }
 
+nav a img{
+	width: 180px;
+	padding: 0;
+	margin: -10px;
+}
 
 footer {
 	color: rgba(0,0,102,1.00);
@@ -104,3 +114,4 @@ footer p{
 	display: block;
 	text-align: right;
 }
+

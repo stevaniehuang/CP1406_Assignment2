@@ -15,7 +15,7 @@
 <nav class="fixednavbar">
 	<ul>
 		<li><span>
-		<img src="../images/Fish-Tasticsmalllogo.png" width="200" height="" alt=""/></span></li>
+		<a href="../index.html"><img src="../images/Fish-Tasticsmalllogo.png" width="200" height="" alt="fishTasticSmallLogo"/></a></span></li>
 		<li><a href="../index.html">Home</a></li>
 		<li><a href="../aboutus.html">Fish-Tastic?!</a>
 			<ul>
@@ -43,10 +43,13 @@
 
 	
 	
-<!-- TemplateBeginEditable name="content" -->
 
+<!-- TemplateBeginEditable name="content" -->
 <p></p>
+
 <!-- TemplateEndEditable -->
+
+
 </body>
 
 <footer>

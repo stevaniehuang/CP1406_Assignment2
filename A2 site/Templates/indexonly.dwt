@@ -14,42 +14,51 @@
 
 <nav class="fixednavbar">
 	<ul>
-		<li>Home</li>
-		<li><a href="../getcostume.html">Fish-Tastic?!</a></li>
-		
-		<li><a href="../joinparty.html">Product</a>
+		<li><a href="../index.html">Home</a></li>
+		<li><a href="../aboutus.html">Fish-Tastic?!</a>
 			<ul>
-				<li><a href="../joinparty.html#signup">Sign Up</a></li>
-				<li><a href="../joinparty.html#partyguidelines">Party Guideliness</a></li>
+				<li><a href="../aboutus.html#aboutus">About Us</a></li>
+				<li><a href="../aboutus.html#faq">FAQ</a></li>
 			</ul>
 		</li>
-		<li><a href="../index.html">Order Now</a></li>
-		<li>Services</li>
-		<li>Announcement</li>
+		<li><a href="../products.html">Product</a>
+			<ul>
+				<li><a href="../products.html#fish">Fish</a></li>
+				<li><a href="../products.html#fishfood">Fish Supplies</a></li>
+				<li><a href="../products.html#equipment">Equipment</a></li>
+			</ul>
+		</li>
+		<li><a href="../orderform.html">Order Now</a></li>
+		<li><a href="../services.html">Services</a></li>
+		<li><a href="../announcements.html">Announcements</a>
+			<ul>
+			<li><a href="../announcements.html#events">Event List</a></li>
+			</ul>
+		</li>
 		<li><a href="../contactus.html">Contact Us</a>
-		<ul>
-			<li>Feedback Form</li>
-		</ul></li>
+			<ul><li>Feedback Form</li></ul>
+		</li>
 	</ul>
 </nav>
 
 <div class="content" id="one">
 	<div id="backgroundimg">
 	<div id="hometitle">
+	
 	<div id="logoholder">
 	<img src="../images/Fish-Tastic logo.png" width="500" height="" alt="fishtasticbiglogo"/></div>
 	<p>
   	"It is truly a privilege to be able to look at a part of the ocean everyday"
 	</p>
 	<ul >
-		<li class="button">Our Products</li>
-		<li class="button">Order Now</li>
+		<li class="button"><a href="../products.html">Our Products</a></li>
+		<li class="button"><a href="../orderform.html">Order Now</a></li>
 	</ul>
 	</div>
 	</div>
 
-	<div class="redirect">
-	  <h1>What's New? <br> &#8595 &#8595 &#8595</h1>
+	<div class="redirect">	 
+	<a href="../index.html#announcement"> <h1>What's New? <br> &#8595 &#8595 &#8595</h1></a>	
 	</div>
 </div>
 
@@ -70,9 +79,10 @@
 
 <footer>
 	<h1>© Fish-Tastic</h1>
-	<p>
-		
-	</p>
+		<p>83 Punggol Central Waterway Point #01-11, Singapore 828761 <br>
+		P: +65 6383 0111 <br>
+		E: enquires@fishtastic.com 
+		</p>
 </footer>
 </body>
 </html>

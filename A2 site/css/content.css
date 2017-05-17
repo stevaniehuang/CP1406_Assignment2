@@ -89,6 +89,15 @@
 .picturelist{
 	list-style-type: none;
 	padding: 10px;
+	
+}
+.picturelist img{
+	transition-property: background, border-radius;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.picturelist img:hover{
+	border-radius: 35%;
 }
 
 ul.picturelist li {
@@ -184,7 +193,7 @@ h3{
 	padding: 5px;
 }
 #content{
-	margin-top:100px;
+	margin-top:120px;
 	align-content: center;
 	text-align: center;
 }
