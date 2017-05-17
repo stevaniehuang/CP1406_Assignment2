@@ -200,3 +200,10 @@ h3{
 #contactus{
 	background-color: rgba(200,227,255,0.50)
 }
+form{
+	align-content: center;
+	vertical-align: middle;
+}
+select{
+	width: 150px;
+}
