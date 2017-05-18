@@ -90,27 +90,74 @@ function productType(){
 	}
 }
 function productPrice(){
-	var product = document.getElementById("products");
-	var selected = product.value;
+	var selected = document.getElementById("products").value;
 	document.getElementById("price").innerHTML = parseFloat(prices[document.getElementById(selected).value]).toFixed(2);
+	if(!(count[document.getElementById(selected).value] >= 0)){	count[document.getElementById(selected).value] = 0;
+	}
 }
 function addPrice(){
-	var product = document.getElementById("products");
-	var selected = product.value;
-	total += prices[document.getElementById(selected).value];
-	document.getElementById("total").innerHTML = parseFloat(total).toFixed(2);
-	document.getElementById("productlist").innerHTML += "<option value='"+document.getElementById(selected).value+"'>"+document.getElementById(selected).value+"</option>";
+	var selected = document.getElementById("products").value;
+	var d = document.getElementById(selected); //shortcut
+	if(count[d.value] > 0){
+		alert("You have already selected this option!\nPlease select the increase button on the right if you would like to purchase more.");
+	}
+	else{
+		total += prices[d.value];
+		document.getElementById("total").innerHTML = parseFloat(total).toFixed(2);
+		count[d.value] = 1;
+		document.getElementById("productlist").innerHTML += "<option value='"+d.value+"'>"+d.value+" x"+count[d.value]+"</option>";
+	}
 }
-function removeProduct(){
-	var productlist = document.getElementById("productlist");
+function increaseAmount(){
 	if(productlist.value == ""){
-		alert("You need to select an option!")
+		alert("You need to select an option!");
 		return;
 	}
-	total = total - prices[productlist.value];
+	total += prices[productlist.value];
 	document.getElementById("total").innerHTML = parseFloat(total).toFixed(2);
+	count[productlist.value]++;
+	productlist.options[productlist.selectedIndex].text = productlist.value +" x"+count[productlist.value];
+}
+function decreaseAmount(){
+	if(productlist.value == ""){
+		alert("You need to select an option!");
+		return;
+	}
+	count[productlist.value]--;
+	total -= prices[productlist.value];
+	document.getElementById("total").innerHTML = parseFloat(total).toFixed(2);
+	if(count[productlist.value] == 0){
+		productlist.remove(productlist.selectedIndex);
+	}
+	productlist.options[productlist.selectedIndex].text = productlist.value +" x"+count[productlist.value];
+}
+function removeProduct(){
+	if(productlist.value == ""){
+		alert("You need to select an option!");
+		return;
+	}
+	total = Math.abs(total - prices[productlist.value]*count[productlist.value]);
+	document.getElementById("total").innerHTML = parseFloat(total).toFixed(2);
+	count[productlist.value] = 0;
 	productlist.remove(productlist.selectedIndex);
 }
+function resetForm(){
+	location.reload();
+}
+function validateEmail(){  
+	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	if(document.getElementById("email").value.match(mailformat)){
+		return true;
+	}
+	else{
+		alert("Your email address is invalid!");
+		document.getElementById("email").value = "";
+		document.getElementById("email").focus();
+	}
+}  
+var productlist = document.getElementById("productlist");
+var count = new Array();
+count["Guppy"] = 0;
 var total = 0;
 var prices = new Array();
 prices["Guppy"]=0.80;

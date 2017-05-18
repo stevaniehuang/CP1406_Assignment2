@@ -80,7 +80,7 @@
 				</tr>
 				<tr>
 					<td>Email Address:</td>
-					<td><input name="email" type="text" required id="email"></td>
+					<td><input name="email" type="email" required id="email" onChange="validateEmail()"></td>
 				</tr>
 				<tr>
 					<td>Product Type:</td>
@@ -92,6 +92,7 @@
 						<option value="fishtanks">Fish Tanks</option>
 						<option value="decorations">Decorations</option>
 				  </select></td>
+				  <td><input name="increase" type="button" id="increase" value="Increase" onClick="increaseAmount()">&emsp;<input name="decrease" type="button" id="decrease" value="Decrease" onClick="decreaseAmount()"></td>
 				</tr>
 				<tr>
 					<td>Product:</td>
@@ -148,6 +149,7 @@
 			</tbody>
 		</table>
 		<input type="submit" id="submit" name="submit">
+		<input type="reset" id="reset" name="reset" onClick="resetForm()">
 	</form>
 	<h2>Thank you</h2>
 	<h3>Do not hesitate to <a href="contactus.html">contact us</a> for any queries</h3>
