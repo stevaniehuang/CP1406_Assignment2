@@ -46,18 +46,25 @@
 
 <!-- InstanceBeginEditable name="content" -->
 <div id="content">
+	
+	<div class="box firstblue">
+    <h1 class="headerinner">Order Form</h1></div>
+	
+	<div id="orderbox" class="secondblue">
+	<h2>Please kindly provide correct information</h2>
 	<form action="" method="post" onsubmit="" id="orderform" name="orderform">
 		<table>
 			<tbody>
 				<tr>
 					<td>First Name:</td>
 					<td><input name="firstname" type="text" required  id="firstname" size="20" maxlength="50"></td>
-					<td>Selected Products:</td>
+					
 				</tr>
 				<tr>
 					<td>Last Name:</td>
 					<td><input name="lastname" type="text" required  id="lastname" maxlength="50"></td>
-					<td rowspan="5"><select name="productlist" size="8" id="productlist"></select></td>
+					
+					<td rowspan="5"><span class="rightside"></span>Selected Products:<br><br><select name="productlist" size="10" id="productlist"></select></td>
 				</tr>
 				<tr>
 					<td>City:</td>
@@ -123,22 +130,28 @@
 						<option value="Castle house">Ceramic Castle House</option>
 					</select>
 					</td>
-					<td><input type="button" id="remove" value="Remove product" onClick="removeProduct()"></td>
+					
+					<td><span class="rightside"><input type="button" id="remove" value="Remove product" onClick="removeProduct()"></span></td>
 				</tr>
 				<tr>
+		
 					<td>Price of Product:</td>
 					<td>$<span id="price">0.80</span></td>
-					<td>Total Price:</td>
+				
 				</tr>
 				<tr>
 					<td></td>
 					<td><input type="button" id="add" value="Add this product" onClick="addPrice()"></td>
-					<td>$<span id="total">0.00</span></td>
+				
+					<td><span class="rightside">Total Price:  $<span id="total">0.00</span></span></td>
 				</tr>
 			</tbody>
 		</table>
 		<input type="submit" id="submit" name="submit">
 	</form>
+	<h2>Thank you</h2>
+	<h3>Do not hesitate to <a href="contactus.html">contact us</a> for any queries</h3>
+	</div>
 </div>
 
 <script src="script/script.js"></script>

@@ -15,9 +15,9 @@
 <nav class="fixednavbar">
 	<ul>
 		<li><a href="../index.html">Home</a></li>
-		<li><a href="../aboutus.html">Fish-Tastic?!</a>
+		<li><a href="../aboutus.html">About Us</a>
 			<ul>
-				<li><a href="../aboutus.html#aboutus">About Us</a></li>
+				<li><a href="../aboutus.html#fishtastic"> Fish-Tastic?!</a></li>
 				<li><a href="../aboutus.html#faq">FAQ</a></li>
 			</ul>
 		</li>

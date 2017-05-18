@@ -33,6 +33,12 @@
 	background-color: rgba(0,210,255,1.00);
 }
 
+.headerinner{
+	padding: 30px;
+	background: rgba(255,219,119,1.00);
+	border-bottom: double 10px rgba(0,0,102,1.00);
+}
+
 .transparentbox{
 	background-color: rgba(255,255,255,0.5);
 	margin: 0 auto; /*center the box*/
@@ -47,10 +53,14 @@
 	color: black;
 }
 
+.transparentbg{
+	padding: 15px;
+	background-color: rgba(255,255,255,0.54);
+}
+
 #aboutus{
 	padding: 50px;
 	text-align: center;
-	
 }
 
 
@@ -59,16 +69,22 @@
 	border-bottom: solid;
 }
 
-#aboutusbg{
+#fishtastic{
+	background: url(../images/fishtank.jpg);
+	padding: 0px 60px;
 }
+
+
 
 #faq{
 	padding: 20px;
 	text-align:center;
+	margin-top: 50px;
+	padding-top: 100px;
 }
 
 #faqbq{
-	
+	background: rgba(255,255,255,0.51);
 
 }
 .question{
@@ -104,19 +120,39 @@
 	transition: margin 0.2s ease;
 }
 
-#fishproduct{
-	padding: 15px;
-	background-color: rgba(255,255,255,0.54);
-}
+
 
 #fishproduct h3{
 	background-color: rgba(154,237,255,1.00);
 	padding: 5px;
-	
 	padding-top: 20px;
-	border-bottom: double 10px;
+	border-bottom: double 5px;
 }
 
+#toOrderForm{
+	text-align: center;
+	position: fixed;
+    top: 250px;
+    right: 1px;
+    width: 100px;
+    height: 100px;
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+    z-index: 1;
+	background: rgba(255,219,119,1.00);
+	transition-property: background, border-radius;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+#toOrderForm p{
+	padding: 10px;
+}
+
+#toOrderForm:hover{
+	border-radius: 30px;
+	background: rgba(219,91,16,1.00);
+}
 .picturelist{
 	list-style-type: none;
 	padding: 10px;
@@ -210,16 +246,9 @@ ul.picturelist li:hover span.textcaption {
 
 #serviceheader{
 	margin: 50px;
-	background: rgba(255,255,255,0.65);
 	padding: 10px;
 }
 
-#serviceheader h1{
-	padding: 30px;
-	background: rgba(255,219,119,1.00);
-	border-bottom: double 10px rgba(0,0,102,1.00) 
-	
-}
 
 #serviceheader h2{
 	display: inline-block;
@@ -238,24 +267,109 @@ ul.picturelist li:hover span.textcaption {
 	color: rgba(0,90,134,1.00);
 }
 
-
 #delivery, #consultation, #refund{
 	padding: 50px;
+	padding-top: 80px;
+}
+
+#events table th{
+	border-bottom: solid 2px;
+	padding: 10px;
+	padding-right: 50px;
+}
+
+#events td{
+	text-align: left;
+	padding: 20px;
+	border-bottom: solid 1px;
+}
+
+#events tr:hover{
+	background-color: rgba(194,244,255,1.00);
 }
 
 
-
-ul li, p, div{
+ul li, p, div, input, select{
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	font-size: 20px;
 }
 
 
+#orderbox{
+	padding: 20px;
+}
 
+#orderform table{
+	margin: 0px auto;
+}
+
+#orderform td{
+	text-align: left;
+	padding: 8px 0px;
+	
+
+}
+
+.rightside{
+	margin-left: 100px;
+}
+
+#orderform input, select{
+	height: 20px;
+	font-size: 18px;
+	
+}
+
+#orderform div{
+	width: 150px;
+}
+
+select#productlist{
+	height: 250px;
+	width: 200px;
+	font-size: 18px;
+	margin-left: 100px;
+}
+
+input#submit, input#remove, input#add{
+	height: 40px;
+	padding: 0 20px;
+}
+
+select{
+	height: 40px;
+	width: auto;
+}
+
+input#submit{
+	margin-top: 30px;
+}
 
 #contactus{
-	background-color: rgba(200,227,255,0.50);
+	padding: 30px;
 }
+
+#faqredirect{
+	text-align: center;
+	margin-top: 0px;
+	padding: 50px;
+}
+
+#faqredirect a{
+	text-decoration: none;
+	transition-property: color;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+}
+
+#faqredirect a:hover{
+	color: rgba(219,91,16,1.00);
+}
+
 select{
 	width: 150px;
+}
+
+a{
+	color: black;
 }
