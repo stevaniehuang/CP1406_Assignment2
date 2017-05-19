@@ -64,7 +64,7 @@
 					<td>Last Name:</td>
 					<td><input name="lastname" type="text" required  id="lastname" maxlength="50"></td>
 					
-					<td rowspan="5"><span class="rightside"></span>Selected Products:<br><br><select name="productlist" size="10" id="productlist"></select></td>
+					<td rowspan="5"><span class="rightside">Selected Products:<br><br><select name="productlist" size="10" id="productlist"></select> </td> 
 				</tr>
 				<tr>
 					<td>City:</td>
@@ -84,7 +84,7 @@
 				</tr>
 				<tr>
 					<td>Product Type:</td>
-					<td><select name="products" id="products" onChange="productType()">
+				  <td><select name="products" id="products" onChange="productType()">
 						<option value="freshwater">Freshwater Fish</option>
 						<option value="saltwater">Saltwater Fish</option>
 						<option value="fishfood">Fish Food</option>
@@ -92,7 +92,7 @@
 						<option value="fishtanks">Fish Tanks</option>
 						<option value="decorations">Decorations</option>
 				  </select></td>
-				  <td><input name="increase" type="button" id="increase" value="Increase" onClick="increaseAmount()">&emsp;<input name="decrease" type="button" id="decrease" value="Decrease" onClick="decreaseAmount()"></td>
+				<td><span class="rightside"><input name="increase" type="button" id="increase" value="Increase" onClick="increaseAmount()">&emsp;<input name="decrease" type="button" id="decrease" value="Decrease" onClick="decreaseAmount()"></span></td></td>
 				</tr>
 				<tr>
 					<td>Product:</td>
@@ -132,7 +132,8 @@
 					</select>
 					</td>
 					
-					<td><span class="rightside"><input type="button" id="remove" value="Remove product" onClick="removeProduct()"></span></td>
+					<td><span class="rightside">
+					<input type="button" id="remove" value="Remove product" onClick="removeProduct()"></span></td>
 				</tr>
 				<tr>
 		

@@ -326,12 +326,12 @@ ul li, p, div, input, select{
 
 select#productlist{
 	height: 250px;
-	width: 200px;
+	width: 220px;
 	font-size: 18px;
 	margin-left: 100px;
 }
 
-input#submit, input#remove, input#add{
+input#submit, input#remove, input#add, input#increase, input#decrease, input#reset{
 	height: 40px;
 	padding: 0 20px;
 }
