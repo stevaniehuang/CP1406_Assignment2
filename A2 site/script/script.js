@@ -148,7 +148,6 @@ function validateEmail(){
 	}
 	else{
 		alert("Your email address is invalid!");
-		document.getElementById("email").value = "";
 		document.getElementById("email").focus();
 	}
 }  
