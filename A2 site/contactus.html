@@ -64,11 +64,35 @@
   <h2>Please check out the FAQ section to find the answers!</h2>
 	<h3><a href="aboutus.html#faq">Frequently Asked Questions <br><br><img src="images/FAQ-512.png" width="300" height="300" alt=""/></a></h3>
 </div>
+
+<div>
+	<form action="">
+		<fieldset>
+		<legend>Feedback form</legend>
+		<input name="name" type="text" required id="name" placeholder="Name"><br><br>
+	  	<input name="email" type="email" required id="email" placeholder="Email" onChange="validateEmail()"><br><br>
+	  	<label for="rating">How was your experience with our website?</label><br>
+	  	<input name="rating" type="radio" required value="very bad" onClick="requiredComments()">
+	  	Very Bad<br>
+	  	<input name="rating" type="radio" value="bad" onClick="requiredComments()">
+	  	Bad<br>
+	  	<input name="rating" type="radio" value="ok" onClick="changeRequired()">
+	  	Ok<br>
+	  	<input name="rating" type="radio" value="good" onClick="changeRequired()">
+	  	Good<br>
+	  	<input name="rating" type="radio" value="very good" onClick="changeRequired()">
+	  	Very good<br><br>
+	 	<textarea name="comment" id="comment" cols="35" rows="10" placeholder="Enter comments here"></textarea><br>
+	 	<input type="submit" id="submit" value="Submit">
+	 	</fieldset>
+  </form>
+</div>
+
+<script src="script/script.js"></script>
 <!-- InstanceEndEditable -->
 
 
 </body>
-
 <footer>
 	<h1>© Fish-Tastic</h1>
 	<p>83 Punggol Central Waterway Point #01-11, Singapore 828761 <br>

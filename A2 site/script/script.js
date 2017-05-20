@@ -1,22 +1,12 @@
-function checkForm() {
-    var d = document.getElementById('orderform'); // just a shortcut
-    var errors = false;
-    var errorMsg = "";
-// basic check required fields
-    if (d.firstname.value == "") {
-        errorMsg += "Please enter your first name.\n";
-        errors = true;
-    }
-	if (d.lastname.value == ""){
-		errorMsg += "Please enter your last name.\n";
-		errors = true;
-	}
-    // if errors exist, popup error message
-    if (errors)
-        alert(errorMsg);
-    // return true (submit form) or false (don't submit form) depending on errors
-    return !errors;
+// feedback form. make comments required if choice is bad or very bad.
+function requiredComments(){
+	document.getElementById("comment").required = true;
+	alert("Please comment below on what could be improved.\nThank you for your time.");
 }
+function changeRequired(){
+	document.getElementById("comment").required = false;
+}
+// first dropdown list of product types that changes the second dropdown list of products.
 function productType(){
 	var product = document.getElementById("products");
 	var selected = product.value;
@@ -89,12 +79,14 @@ function productType(){
 		productPrice();
 	}
 }
+// displays the price of the product to the user
 function productPrice(){
 	var selected = document.getElementById("products").value;
 	document.getElementById("price").innerHTML = parseFloat(prices[document.getElementById(selected).value]).toFixed(2);
 	if(!(count[document.getElementById(selected).value] >= 0)){	count[document.getElementById(selected).value] = 0;
 	}
 }
+// adds the product to the 'shopping cart'
 function addPrice(){
 	var selected = document.getElementById("products").value;
 	var d = document.getElementById(selected); //shortcut
@@ -108,6 +100,7 @@ function addPrice(){
 		document.getElementById("productlist").innerHTML += "<option value='"+d.value+"'>"+d.value+" x"+count[d.value]+"</option>";
 	}
 }
+// increases the amount of the product selected
 function increaseAmount(){
 	if(productlist.value == ""){
 		alert("You need to select an option!");
@@ -118,6 +111,7 @@ function increaseAmount(){
 	count[productlist.value]++;
 	productlist.options[productlist.selectedIndex].text = productlist.value +" x"+count[productlist.value];
 }
+// decreases the amount of the product selected
 function decreaseAmount(){
 	if(productlist.value == ""){
 		alert("You need to select an option!");
@@ -131,6 +125,7 @@ function decreaseAmount(){
 	}
 	productlist.options[productlist.selectedIndex].text = productlist.value +" x"+count[productlist.value];
 }
+// removes the product from the 'shopping cart'
 function removeProduct(){
 	if(productlist.value == ""){
 		alert("You need to select an option!");
@@ -141,11 +136,13 @@ function removeProduct(){
 	count[productlist.value] = 0;
 	productlist.remove(productlist.selectedIndex);
 }
+// refreshes the whole page as a way to reset the form completely
 function resetForm(){
 	location.reload();
 }
+// email validation
 function validateEmail(){  
-	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;// regular expression containing valid expressions in an email
 	if(document.getElementById("email").value.match(mailformat)){
 		return true;
 	}
@@ -155,11 +152,12 @@ function validateEmail(){
 		document.getElementById("email").focus();
 	}
 }  
-var productlist = document.getElementById("productlist");
-var count = new Array();
-count["Guppy"] = 0;
-var total = 0;
-var prices = new Array();
+var productlist = document.getElementById("productlist");// shortcut
+var count = new Array();// counts the amount of a product
+count["Guppy"] = 0;// define the first element in the array, the rest are defined in the function on change of the product selected
+var total = 0;// keeps track of the total price
+var prices = new Array();// list of all the prices
+// defines all the prices of the various products
 prices["Guppy"]=0.80;
 prices["Fantail goldfish"]=1.00;
 prices["Oranda goldfish"]=1.30;
