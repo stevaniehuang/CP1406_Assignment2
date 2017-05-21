@@ -6,6 +6,14 @@ function requiredComments(){
 function changeRequired(){
 	document.getElementById("comment").required = false;
 }
+function neededComments(){
+	document.getElementById("needComments").style.display = "";
+	document.getElementById("needComments").required = true;
+}
+function notNeeded(){
+	document.getElementById("needComments").style.display = "none";
+	document.getElementById("needComments").required = false;
+}
 // first dropdown list of product types that changes the second dropdown list of products.
 function productType(){
 	var product = document.getElementById("products");

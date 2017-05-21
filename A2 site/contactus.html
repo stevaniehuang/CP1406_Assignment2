@@ -71,13 +71,24 @@
 		<legend>Feedback form</legend>
 		<input name="name" type="text" required id="name" placeholder="Name"><br><br>
 	  	<input name="email" type="email" required id="email" placeholder="Email" onChange="validateEmail()"><br><br>
+	  	<label for="needed">Did you find what you needed?</label><br>
+	  	<input name="needed" type="radio" required value="all" onClick="notNeeded()">Yes, all of it<br>
+	  	<input name="needed" type="radio" required value="some" onClick="neededComments()">Yes, some of it<br>
+	  	<input name="needed" type="radio" required value="none" onClick="neededComments()">No, none of it<br><br>
+	  	<textarea name="needComments" cols="35" rows="10" id="needComments" placeholder="Please elaborate (what information were you looking for?)" style="display:none"></textarea><br>
+	  	<label for="ease">Was it easy to navigate the website? (Finding information, good link placement)</label><br>
+	  	<input name="ease" type="radio" required value="very hard">Very hard<br>
+	  	<input name="ease" type="radio" required value="hard">Hard<br>
+	  	<input name="ease" type="radio" required value="average">Average<br>
+	  	<input name="ease" type="radio" required value="easy">Easy<br>
+	  	<input name="ease" type="radio" required value="very easy">Very easy<br><br>
 	  	<label for="rating">How was your experience with our website?</label><br>
 	  	<input name="rating" type="radio" required value="very bad" onClick="requiredComments()">
 	  	Very Bad<br>
 	  	<input name="rating" type="radio" value="bad" onClick="requiredComments()">
 	  	Bad<br>
-	  	<input name="rating" type="radio" value="ok" onClick="changeRequired()">
-	  	Ok<br>
+	  	<input name="rating" type="radio" value="average" onClick="changeRequired()">
+	  	Average<br>
 	  	<input name="rating" type="radio" value="good" onClick="changeRequired()">
 	  	Good<br>
 	  	<input name="rating" type="radio" value="very good" onClick="changeRequired()">
