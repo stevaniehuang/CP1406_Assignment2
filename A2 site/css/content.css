@@ -58,23 +58,30 @@
 	background-color: rgba(255,255,255,0.54);
 }
 
+#fishtastic{
+	background: url(../images/fishtank.jpg);
+	padding: 0px 60px;
+}
+
 #aboutus{
 	padding: 50px;
 	text-align: center;
 }
-
 
 #aboutus h2{
 	padding: 20px;
 	border-bottom: solid;
 }
 
-#fishtastic{
-	background: url(../images/fishtank.jpg);
-	padding: 0px 60px;
+
+#awards .picturelist{
+	margin: 5px;
+	margin-top: -45px;
 }
 
-
+#awards .picturelist img{
+	margin: -42px 15px;
+}
 
 #faq{
 	padding: 20px;
