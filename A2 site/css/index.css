@@ -146,7 +146,7 @@ nav li:hover{
 
 #logoholder{
 	margin: auto;
-	margin-top: 30px;
+	margin-top: 45px;
 	animation: comein 3s; 
 }
 @keyframes comein{
@@ -165,7 +165,7 @@ nav li:hover{
 
 #hometitle p{
 	top: -10px;
-	padding-top: -50px;
+	padding-top: -70px;
 	font-size: 25px;
 	bottom: 0px;
 	text-shadow: 2px 3px 4px #9B9B9B;

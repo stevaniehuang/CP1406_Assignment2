@@ -46,7 +46,7 @@
 	<div id="hometitle">
 	
 	<div id="logoholder">
-	<img src="../images/Fish-Tastic logo.png" width="500" height="" alt="fishtasticbiglogo"/></div>
+	  <img src="../images/newLogo.png" width="220" height="270" alt="newfishtasticlogo"/></div>
 	<p>
   	"It is truly a privilege to be able to look at a part of the ocean everyday"
 	</p>
@@ -58,7 +58,7 @@
 	</div>
 
 	<div class="redirect">	 
-	<a href="../index.html#announcement"> <h1>What's New? <br> &#8595 &#8595 &#8595</h1></a>	
+	<a href="#announcement"> <h1>What's New? <br> &#8595 &#8595 &#8595</h1></a>	
 	</div>
 </div>
 

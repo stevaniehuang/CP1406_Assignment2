@@ -133,9 +133,9 @@
 	text-align: center;
 	position: fixed;
     top: 250px;
-    right: 1px;
-    width: 100px;
-    height: 100px;
+    right: 0px;
+    width: 120px;
+    height: 120px;
     -webkit-transition: all 2s ease-in-out;
     transition: all 2s ease-in-out;
     z-index: 1;
@@ -146,7 +146,9 @@
 }
 
 #toOrderForm p{
-	padding: 10px;
+	padding: 15px;
+	font-size: 22px;
+	font-weight: bold;
 }
 
 #toOrderForm:hover{
@@ -364,6 +366,17 @@ input#submit{
 
 #faqredirect a:hover{
 	color: rgba(219,91,16,1.00);
+}
+
+#feedback{
+	padding: 50px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#feedbackform{
+	text-align: left;
+	padding: 20px;
 }
 
 select{
