@@ -64,7 +64,7 @@
 					<td>Last Name:</td>
 					<td><input name="lastname" type="text" required  id="lastname" maxlength="50"></td>
 					
-					<td rowspan="5"><span class="rightside">Selected Products:<br><br><select name="productlist" size="10" id="productlist"></select> </td> 
+					<td rowspan="5"><span class="rightside" id="selPro">Selected Products:</span><br><br><select name="productlist" size="10" id="productlist"></select> </td> 
 				</tr>
 				<tr>
 					<td>City:</td>
@@ -145,7 +145,7 @@
 					<td></td>
 					<td><input type="button" id="add" value="Add this product" onClick="addPrice()"></td>
 				
-					<td><span class="rightside">Total Price:  $<span id="total">0.00</span></span></td>
+					<td><span class="rightside">Total Price:<br><span id="totalPrice">$<span id="total">0.00</span></span></span></td>
 				</tr>
 			</tbody>
 		</table>

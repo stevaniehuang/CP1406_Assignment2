@@ -322,6 +322,10 @@ ul li, p, div, input, select{
 .rightside{
 	margin-left: 100px;
 }
+#totalPrice{
+	margin-left: 70px;
+	font-size: 50px;
+}
 
 #orderform input, select{
 	height: 20px;

@@ -99,20 +99,27 @@ function addPrice(){
 	var selected = document.getElementById("products").value;
 	var d = document.getElementById(selected); //shortcut
 	if(count[d.value] > 0){
-		alert("You have already selected this option!\nPlease select the increase button on the right if you would like to purchase more.");
+		productlist.selectedIndex = productlist.options.length-1;
+		increaseAmount();
 	}
 	else{
+		window.location.href = "orderform.html#orderbox";
+		document.getElementById("selPro").style.color = "red";
 		total += prices[d.value];
 		document.getElementById("total").innerHTML = parseFloat(total).toFixed(2);
 		count[d.value] = 1;
 		document.getElementById("productlist").innerHTML += "<option value='"+d.value+"'>"+d.value+" x"+count[d.value]+"</option>";
+		productlist.selectedIndex = productlist.options.length-1;
 	}
 }
 // increases the amount of the product selected
 function increaseAmount(){
 	if(productlist.value == ""){
-		alert("You need to select an option!");
-		return;
+		productlist.selectedIndex = 0;
+		if(productlist.value == ""){
+			alert("You have not selected a product!\nPlease choose a product on the left first.")
+			return;
+		}
 	}
 	total += prices[productlist.value];
 	document.getElementById("total").innerHTML = parseFloat(total).toFixed(2);
@@ -122,8 +129,11 @@ function increaseAmount(){
 // decreases the amount of the product selected
 function decreaseAmount(){
 	if(productlist.value == ""){
-		alert("You need to select an option!");
-		return;
+		productlist.selectedIndex = 0;
+		if(productlist.value == ""){
+			alert("You have not selected a product!\nPlease choose a product on the left first.")
+			return;
+		}
 	}
 	count[productlist.value]--;
 	total -= prices[productlist.value];
@@ -136,8 +146,11 @@ function decreaseAmount(){
 // removes the product from the 'shopping cart'
 function removeProduct(){
 	if(productlist.value == ""){
-		alert("You need to select an option!");
-		return;
+		productlist.selectedIndex = 0;
+		if(productlist.value == ""){
+			alert("You have not selected a product!\nPlease choose a product on the left first.")
+			return;
+		}
 	}
 	total = Math.abs(total - prices[productlist.value]*count[productlist.value]);
 	document.getElementById("total").innerHTML = parseFloat(total).toFixed(2);
