@@ -1,15 +1,22 @@
 @charset "utf-8";
 
+/* General styling for any pages */
+ul li, p, div, input, select{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 20px;
+}
+
+select{
+	width: 150px;
+}
+
+a{
+	color: black;
+}
+
 .box{
 	margin: 50px 120px;
 	padding: 20px;
-	text-align: center;
-}
-
-
-#content{
-	margin-top: 160px;
-	align-content: center;
 	text-align: center;
 }
 
@@ -58,21 +65,65 @@
 	background-color: rgba(255,255,255,0.54);
 }
 
+/* these rules (.picturelist) is use to style the list of pictures side by side and when hovered it will show some transitions */
+.picturelist{
+	list-style-type: none;
+	padding: 10px;
+	
+}
+.picturelist img{
+	transition-property: background, border-radius;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.picturelist img:hover{
+	border-radius: 35%;
+}
+
+ul.picturelist li {
+	display: inline-block;
+	position: relative;
+	margin: 20px
+}
+
+#content{
+	margin-top: 160px;
+	align-content: center;
+	text-align: center;
+}
+
+#petshop, #koi, #events, #fish, #fishfood, #equipment{
+	/* this syling rule is specifically made for making sure that the redirect divs with this IDs will not be covered by the nav bar on the top */ 
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+/* About Us page */
 #fishtastic{
-	background: url(../images/fishtank.jpg);
-	padding: 0px 60px;
+	/* The background image on the about us section */
+	background: url(../images/aquariumdesignshop.jpg);
+	background-position: center;
+	padding: 20px 70px;
+}
+
+#fishtastic .transparentbg{
+	padding: 50px 20px;
 }
 
 #aboutus{
-	padding: 50px;
 	text-align: center;
 }
 
 #aboutus h2{
+	margin-top: 0;
 	padding: 20px;
 	border-bottom: solid;
 }
 
+#aboutus #fishtastic .box{
+	margin: 0 100px;
+}
 
 #awards .picturelist{
 	margin: 5px;
@@ -83,17 +134,19 @@
 	margin: -42px 15px;
 }
 
+
+
 #faq{
 	padding: 20px;
 	text-align:center;
 	margin-top: 50px;
 	padding-top: 100px;
 }
-
 #faqbq{
+	/* transparent background with no padding*/
 	background: rgba(255,255,255,0.51);
-
 }
+/* used just for the faq section, gives the effect of dropdown when question is clicked*/
 .question{
 	vertical-align: middle;
 	cursor:pointer;
@@ -104,9 +157,6 @@
 	font-size: 20px;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	box-shadow: 1px 5px 4px 1px #d3d3d3;
-	
-	
-
 }
 .question[value="Show"] + .answer div{
 	margin-top:-100%;
@@ -128,14 +178,14 @@
 }
 
 
-
+/* Products page */
 #fishproduct h3{
 	background-color: rgba(154,237,255,1.00);
 	padding: 5px;
 	padding-top: 20px;
 	border-bottom: double 5px;
 }
-
+/* use to redirect to orderform, this button stays on right side of product page */
 #toOrderForm{
 	text-align: center;
 	position: fixed;
@@ -151,38 +201,17 @@
     transition-duration: 1s;
     transition-timing-function: linear;
 }
-
 #toOrderForm p{
 	padding: 15px;
 	font-size: 22px;
 	font-weight: bold;
 }
-
 #toOrderForm:hover{
 	border-radius: 30px;
 	background: rgba(219,91,16,1.00);
 }
-.picturelist{
-	list-style-type: none;
-	padding: 10px;
-	
-}
-.picturelist img{
-	transition-property: background, border-radius;
-    transition-duration: 1s;
-    transition-timing-function: linear;
-}
-.picturelist img:hover{
-	border-radius: 35%;
-}
 
-ul.picturelist li {
-	display: inline-block;
-	position: relative;
-	margin: 20px
-}
-
-
+/* This styling is use for the caption of the picture of the products, shown only when hovered */
 span.textcaption {
 	background: rgba(0,0,0,0.5);
 	color: white;
@@ -198,14 +227,13 @@ span.textcaption {
 	-o-transition: opacity 500ms;
 	transition: opacity 500ms;
 }
-
 span.textcaption span {
   	text-align: center;
 }
 ul.picturelist li:hover span.textcaption {
   	opacity: 1;
 }
-
+/* The part where the description pops up when the image is clicked */
 .modalDialog {
 	position: fixed;
 	width: auto;
@@ -236,7 +264,7 @@ ul.picturelist li:hover span.textcaption {
 .modalDialog > div ul{
 	margin-left:-40px;
 }
-/* The Close Button */
+/* The Close Button of the pop up description*/
 .close {
     color: #aaaaaa;
     float: right;
@@ -245,7 +273,6 @@ ul.picturelist li:hover span.textcaption {
 	text-decoration: none;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 }
-
 .close:hover, .close:focus {
     color: #000;
     text-decoration: none;
@@ -253,11 +280,11 @@ ul.picturelist li:hover span.textcaption {
 }
 
 
+/* Services page */
 #serviceheader{
 	margin: 50px;
 	padding: 10px;
 }
-
 
 #serviceheader h2{
 	display: inline-block;
@@ -276,11 +303,13 @@ ul.picturelist li:hover span.textcaption {
 	color: rgba(0,90,134,1.00);
 }
 
+/* to make sure that redirect divs will not be covered up by the nav bar */
 #delivery, #consultation, #refund{
 	padding: 50px;
 	padding-top: 80px;
 }
 
+/* Announcements page - styling mostly focuses on the events table as other parts reuses the general styling*/
 #events table th{
 	border-bottom: solid 2px;
 	padding: 10px;
@@ -298,11 +327,12 @@ ul.picturelist li:hover span.textcaption {
 }
 
 
-ul li, p, div, input, select{
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-	font-size: 20px;
+/* Order Form page */
+.rightside{
+	/* this class is specifically used for spans on the order form table.
+	It is used to make some of the td stays nicely besides other td */
+	margin-left: 100px;
 }
-
 
 #orderbox{
 	padding: 20px;
@@ -315,22 +345,19 @@ ul li, p, div, input, select{
 #orderform td{
 	text-align: left;
 	padding: 8px 0px;
-	
-
 }
 
-.rightside{
-	margin-left: 100px;
-}
-#totalPrice{
-	margin-left: 70px;
-	font-size: 50px;
+#totalprice{
+	/* special styling just for the total price to be more clear for user */
+	font-size: 27px;
+	background-color: rgba(155,237,255,1.00);
+	padding: 5px;
 }
 
+/* more styling on the buttons and selects of the order form*/
 #orderform input, select{
 	height: 20px;
 	font-size: 18px;
-	
 }
 
 #orderform div{
@@ -358,11 +385,17 @@ input#submit{
 	margin-top: 30px;
 }
 
+
+/* Contact Us page */
 #contactus{
 	padding: 30px;
 }
+#contactus p{
+	font-size: 22px;
+}
 
 #faqredirect{
+	/* this part is the div that will redirect users to FAQ section in case of  finding solutions to any general questions */
 	text-align: center;
 	margin-top: 0px;
 	padding: 50px;
@@ -388,12 +421,4 @@ input#submit{
 #feedbackform{
 	text-align: left;
 	padding: 20px;
-}
-
-select{
-	width: 150px;
-}
-
-a{
-	color: black;
 }
