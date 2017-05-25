@@ -29,7 +29,6 @@ nav ul{
 
 nav ul li {
 	font-size: 18px;
-	padding: 20px;	
 	display: inline-block;
 	position: relative;
 	transition-property: background;
@@ -40,6 +39,8 @@ nav ul li {
 nav ul li a{
 	text-decoration: none;
 	color: black;
+	padding: 20px;	
+	display: block;
 }
 
 nav li ul {
@@ -62,12 +63,13 @@ nav li:hover ul{
 nav li:hover ul li{
 	margin: 0;
 	text-decoration: none;
-	display: flex;
-	padding-left: 10px;
+	display: block;
 }
 
 nav li:hover ul li a{
 	color: black;
+	display: block;
+	padding-left: 10px;
 }
 
 nav li:hover{
