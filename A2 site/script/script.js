@@ -21,7 +21,7 @@ function productType(){
 	//shortcuts
 	var freshwater = document.getElementById("freshwater");
 	var saltwater = document.getElementById("saltwater");
-	var fishfood = document.getElementById("fishfood");
+	var fishfoods = document.getElementById("fishfoods");
 	var medications = document.getElementById("medications");
 	var fishtanks = document.getElementById("fishtanks");
 	var decorations = document.getElementById("decorations");
@@ -30,7 +30,7 @@ function productType(){
 	{
 		saltwater.style.display = "";
 		freshwater.style.display ="none";
-		fishfood.style.display = "none";
+		fishfoods.style.display = "none";
 		medications.style.display ="none";
 		fishtanks.style.display = "none";
 		decorations.style.display = "none";
@@ -40,17 +40,17 @@ function productType(){
 	{
 		saltwater.style.display = "none";
 		freshwater.style.display ="";
-		fishfood.style.display = "none";
+		fishfoods.style.display = "none";
 		medications.style.display ="none";
 		fishtanks.style.display = "none";
 		decorations.style.display = "none";
 		productPrice();
 	}
-	if (selected == "fishfood")
+	if (selected == "fishfoods")
 	{
 		saltwater.style.display = "none";
 		freshwater.style.display ="none";
-		fishfood.style.display = "";
+		fishfoods.style.display = "";
 		medications.style.display ="none";
 		fishtanks.style.display = "none";
 		decorations.style.display = "none";
@@ -60,7 +60,7 @@ function productType(){
 	{
 		saltwater.style.display = "none";
 		freshwater.style.display ="none";
-		fishfood.style.display = "none";
+		fishfoods.style.display = "none";
 		medications.style.display ="";
 		fishtanks.style.display = "none";
 		decorations.style.display = "none";
@@ -70,7 +70,7 @@ function productType(){
 	{
 		saltwater.style.display = "none";
 		freshwater.style.display ="none";
-		fishfood.style.display = "none";
+		fishfoods.style.display = "none";
 		medications.style.display ="none";
 		fishtanks.style.display = "";
 		decorations.style.display = "none";
@@ -80,7 +80,7 @@ function productType(){
 	{
 		saltwater.style.display = "none";
 		freshwater.style.display ="none";
-		fishfood.style.display = "none";
+		fishfoods.style.display = "none";
 		medications.style.display ="none";
 		fishtanks.style.display = "none";
 		decorations.style.display = "";

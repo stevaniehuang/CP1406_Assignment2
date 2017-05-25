@@ -37,7 +37,9 @@
 			<li><a href="../announcements.html#events">Event List</a></li>
 			</ul>
 		</li>
-		<li><a href="../contactus.html">Contact Us</a></li>
+		<li><a href="../contactus.html">Contact Us</a>
+			<ul><li><a href="../contactus.html#feedback">Feedback Form</a></li></ul>
+		</li>
 	</ul>
 </nav>
 
