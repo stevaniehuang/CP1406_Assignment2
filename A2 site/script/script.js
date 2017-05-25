@@ -99,7 +99,12 @@ function addPrice(){
 	var selected = document.getElementById("products").value;
 	var d = document.getElementById(selected); //shortcut
 	if(count[d.value] > 0){
-		productlist.selectedIndex = productlist.options.length-1;
+		for( var i=0; i < productlist.options.length; i++){
+			if( productlist.options[i].value == d.value){
+				productlist.selectedIndex = i;
+				break;
+			}
+		}
 		increaseAmount();
 	}
 	else{
