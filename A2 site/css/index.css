@@ -1,6 +1,8 @@
 @charset "utf-8";
+/* this css is use specially only for the homepage. this includes the navigation, footer and the content itself. */
 
- html,body {
+/* whole body */
+html,body {
   	height:100%;
   	margin:0;
 }
@@ -9,6 +11,17 @@ body{
 	background: url(../images/fishbubblesEdit.jpg);
 }
 
+h1, p, li {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+
+/* navigation bar */
 .fixednavbar {
   	position: fixed;
   	top: 0;
@@ -23,8 +36,6 @@ nav ul{
 	margin-top: -1px;
 	text-align: right;
 	padding-right: 20px;
-	
-	
 }
 
 nav ul li {
@@ -76,11 +87,11 @@ nav li:hover{
 	background-color: #F07D39;
 }
 
+/* content in the page */
 .content {
 	position: relative;
 
 }
-
 
 .button{
 	cursor: pointer;
@@ -96,6 +107,7 @@ nav li:hover{
     transition-duration: 1s;
     transition-timing-function: linear;
 }
+
 .button:hover{
 	background: #F07D39;
 }
@@ -104,6 +116,7 @@ nav li:hover{
 	text-align: center;
 	padding-bottom: 5px;
 }
+
 .redirect a:hover{
 	text-decoration: underline;
 }
@@ -161,8 +174,6 @@ nav li:hover{
 	padding: 80px;
 	text-align: center;
 	background-color: rgba(255,255,255,0.55);
-	
-	
 }
 
 #hometitle p{
@@ -198,6 +209,7 @@ nav li:hover{
 #announcementContent a:hover span{
 	text-decoration: underline;
 }
+
 .announcementList{
 	box-shadow: 2px 4px 4px #939393;
 	padding: 12px 5px;
@@ -215,19 +227,7 @@ nav li:hover{
 }
 
 
-
-
-h1, p, li {
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-}
-
-
-a{
-	text-decoration: none;
-	color: black;
-}
-
-
+/* footer */
 footer {
 	color: rgba(0,0,102,1.00);
     background-color: rgba(194,244,255,1.00);
